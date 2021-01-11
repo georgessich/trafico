@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Rubik:wght@300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #FEF8F5;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+.container {
+    max-width: 1171px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title {
+    font-family: 'DM Serif Display', sans-serif;
+    font-weight: 500;
+}
+
+.header {
+    background-image: url('../img/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: 97%;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    margin-bottom: 40px;
+}
+.header-top__logo {
+    width: 212px;
+    height: 50px;
+    margin-right: 300px;
+}
+.header-menu {
+    justify-content: center;
+    align-items: center;
+
+}
+.header-menu__list {
+    display: flex;
+}
+.header-menu__item + .header-menu__item {
+    margin-left: 100px;
+}
+.header-menu__link {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.header-menu__link:hover{
+    filter: brightness(95%);
+}
+
+.link-contact {
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #ee4d47;
+    width: 158px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+}
+
+.header__inner {
+    margin-bottom: 192px;
+}
+
+.header-title {
+    font-size: 100px;
+    color: #ffffff;
+    max-width: 741px;
+    margin-bottom: 70px;
+}
+.header-btn {
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #ee4d47;
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    padding: 24px 71px 24px 24px;
+    position: relative;
+}
+
+.header-btn::after {
+    content:"";
+    position: absolute;
+    width: 29.5px;
+    height: 12.35px;
+    margin-top: 2px;
+    margin-left: 20px;
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
+}
+
+.header-btn:hover {
+    filter: brightness(95%);
+}
+
+.header-truck {
+    width: 600px;
+    height: 394.55px;
+    animation-name: slide-right;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide-right{
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
