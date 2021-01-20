@@ -368,11 +368,13 @@ body {
     position: absolute;
     top: -25%;
     left:75%;
+    cursor: pointer;
 }
 
 .slick-prev {
     left:70%;
     transform: rotate(180deg);
+   
 }
 
 .signup {
