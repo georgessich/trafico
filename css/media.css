@@ -1,0 +1,144 @@
+@media (max-width:1590px){
+    .header {
+        background-size: 105%;
+    }
+}
+
+@media (max-width:1490px){
+    .header__inner {
+        margin-bottom: 166px;
+    }
+    .header-title {
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 1390px){
+    .header {
+        background-size: 110%;
+    }
+    .header-truck {
+        width: 560px;
+        height: 370.55px;
+    }
+    .faq__inner-img {
+        padding-top: 140px;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width:1290px){
+    .header {
+        background-size: 115%;
+    }
+
+    .header-truck {
+        width: 530px;
+        height: 350.55px;
+    }
+}
+
+@media (max-width: 1190px){
+    .header {
+        background-size: 120%;
+    }
+    .header__inner {
+        margin-bottom: 100px;
+    }
+    .header-truck {
+        width: 494px;
+        height: 322.55px;
+    }
+    .howto__inner-img {
+        margin-left: -100px;
+    }
+}
+
+@media (max-width:1134px){
+    
+    .container {
+        padding-left: 30px;
+    }
+    .faq__questions {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:1090px) {
+    .header {
+        background-size: 125%;
+    }
+    .container {
+        padding-left: 30px;
+    }
+    .header-top {
+        margin-bottom: 25px;
+    }
+    .header-title {
+        font-size: 85px;
+    }
+    .header-truck {
+        width: 470px;
+        height: 300.55px;
+    }
+}
+@media (max-width:990px){
+    .header {
+        background-image: none;
+        background-size: auto;
+        background-color: #f48767;
+    }
+    .header-truck {
+        display: none;
+    }
+}
+
+@media (max-width:764px) {
+    .header-menu__list {
+        display: block;
+        position: absolute;
+        left:0;
+        right: 0;
+        background-color: rgba(244, 135, 103, 0.7);
+        text-align: center;
+        transition: all 0.7s;
+        transform: translateY(-300%);
+    }
+    .header-menu__list.header-menu__list--active{
+        transform:translateY(0%);
+        transition: all 0.7s;
+    }
+    .header-menu__link {
+        display: block;
+        padding: 10px 0;
+    }
+    .header-menu__item + .header-menu__item {
+        margin-left: 0;
+    }
+    .menu__btn {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 25px;
+    }
+    .link-contact {
+        display: none;
+    }
+    .header-title {
+        margin-top: 68px;
+    }
+}
+
+@media (max-width: 524px){
+    .tab-title {
+        font-size: 16px;
+        max-width: 435px;
+    }
+    .tab-title:after {
+        margin-left: -22px;
+    }
+    .panel {
+        max-width: 435px;
+    }
+}
