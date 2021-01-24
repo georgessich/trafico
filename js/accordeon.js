@@ -1,16 +1,6 @@
-var acc = document.querySelectorAll('.tab-title');
-var i;
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener('click', function(){
-        this.classList.toggle('active');
 
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-        }
-    });
-}
+$('.tab-title').on('click', function() {
+    $('.tab-title .panel').not($(this).next()).slideUp(250);
+    $(this).next().slideToggle(500);
+});
 
-// function hideNextElement
