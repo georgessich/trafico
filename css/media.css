@@ -55,6 +55,12 @@
     }
 }
 
+@media (max-width: 1160px){
+    .header-top__logo {
+        margin-right: 270px;
+    }
+}
+
 @media (max-width:1134px){
     
     .container {
@@ -62,6 +68,9 @@
     }
     .faq__questions {
         grid-template-columns: 1fr;
+    }
+    .header-menu__item + .header-menu__item {
+        margin-left: 80px;
     }
 }
 
@@ -83,6 +92,30 @@
         height: 300.55px;
     }
 }
+
+@media (max-width:1080px) {
+    .header-menu__item + .header-menu__item {
+        margin-left: 45px;
+    }
+    .signup {
+        background-size: 120%;
+    }
+}
+
+@media (max-width: 1050px){
+    .signup__form {
+        width: 520px;
+        height: 420px;
+    }
+    .signup__form label {
+        padding-left: 60px;
+    }
+
+    .signup__form-input {
+        margin-left: 60px;
+    }
+}
+
 @media (max-width:990px){
     .header {
         background-image: none;
@@ -92,9 +125,30 @@
     .header-truck {
         display: none;
     }
+    .faq__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .faq__inner-subtitle {
+        padding-top: 100px;
+    }
+
+    .signup__form {
+        width: 450px;
+        height: 400px;
+    }
+    .signup__form label {
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .signup__form-input {
+        margin-left: 30px;
+    }
 }
 
-@media (max-width:764px) {
+@media (max-width:970px) {
     .header-menu__list {
         display: block;
         position: absolute;
@@ -130,14 +184,87 @@
     }
 }
 
+@media (max-width:950px){
+    .signup__form {
+        width: 435px;
+        height: 340px;
+    }
+    .signup__form label {
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+
+    .signup__form-input {
+        margin-left: 15px;
+    }
+}
+
+
+@media(max-width: 880px){
+    .about__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .about__question {
+        font-size: 18px;
+        max-width: 450px;
+    }
+
+    .howto__inner {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .signup {
+        background-image: none;
+        background-color: #0F264C;
+    }
+    .signup__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .signup__text {
+        margin-left: 0;
+        padding-top: 200px;
+    }
+    .signup__form {
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 524px){
+    .header-top {
+        margin-bottom: -40px;
+    }
+
+    .header-title {
+        font-size: 65px;
+    }
+
+    .faq__inner {
+        margin-bottom: 25px;
+    }
+
+    .faq__inner-subtitle {
+        padding-top: 55px;
+        margin-bottom: 25px;
+    }
+
+    .faq__inner-title {
+        font-size: 36px;
+        min-width: 350px;
+    }
+
     .tab-title {
         font-size: 16px;
         max-width: 435px;
     }
+
     .tab-title:after {
         margin-left: -22px;
     }
+
     .panel {
         max-width: 435px;
     }
